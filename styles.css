@@ -56,6 +56,12 @@ body {
   line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -1070,6 +1076,16 @@ section {
     min-height: auto;
   }
 
+  .hero-title {
+    font-size: clamp(2.25rem, 10vw, 3.2rem);
+  }
+
+  .hero-subtitle {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .hero-actions {
     flex-direction: column;
     gap: 0.75rem;
@@ -1081,10 +1097,38 @@ section {
     padding: 12px 24px;
   }
 
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .info-card {
+    flex-wrap: wrap;
+  }
+
+  .info-icon {
+    flex: 0 0 auto;
+  }
+
   .plants-grid,
   .services-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .plant-image-container {
+    height: 220px;
+  }
+
+  .contact-form-container {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .main-footer {
+    padding: 2rem 1rem;
   }
 
   /* Disable sticky hover translation on touch cards to prevent weird shifting */
